@@ -1,4 +1,4 @@
-package com.plantherbs.app
+package com.plantherbs.app.ui.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

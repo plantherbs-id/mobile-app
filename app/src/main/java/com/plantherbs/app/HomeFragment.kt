@@ -1,4 +1,4 @@
-package com.plantherbs.app.ui.home
+package com.plantherbs.app
 
 import android.os.Bundle
 import android.view.LayoutInflater

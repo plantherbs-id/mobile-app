@@ -22,7 +22,7 @@
     </fragment>
     <fragment
         android:id="@+id/viewPagerFragment"
-        android:name="com.plantherbs.app.ui.ViewPagerFragment"
+        android:name="com.plantherbs.app.viewpager.ViewPagerFragment"
         android:label="fragment_view_pager"
         tools:layout="@layout/fragment_view_pager" >
         <action
@@ -33,7 +33,7 @@
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.plantherbs.app.ui.home.HomeFragment"
+        android:name="com.plantherbs.app.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
 </navigation>

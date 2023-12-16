@@ -1,4 +1,4 @@
-package com.plantherbs.app.ui
+package com.plantherbs.app.viewpager
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
