@@ -8,7 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.plantherbs.app.mytestapp.R
+import com.plantherbs.app.R
 
 class SplashFragment : Fragment() {
 

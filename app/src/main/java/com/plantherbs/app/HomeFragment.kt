@@ -5,7 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.plantherbs.app.mytesapp.R
+import com.plantherbs.app.R
 class HomeFragment : Fragment() {
 
     override fun onCreateView(
