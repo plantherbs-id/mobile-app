@@ -1,4 +1,4 @@
-package com.plantherbs.app.onboarding
+package com.plantherbs.app.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,9 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.plantherbs.app.R
-import com.plantherbs.app.onboarding.screens.FirstScreen
-import com.plantherbs.app.onboarding.screens.SecondScreen
-import com.plantherbs.app.onboarding.screens.ThirdScreen
+import com.plantherbs.app.ui.screens.FirstScreen
+import com.plantherbs.app.ui.screens.SecondScreen
+import com.plantherbs.app.ui.screens.ThirdScreen
 import kotlinx.android.synthetic.main.fragment_view_pager.view.*
 
 class ViewPagerFragment : Fragment() {

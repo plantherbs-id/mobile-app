@@ -1,4 +1,4 @@
-package com.plantherbs.app.onboarding
+package com.plantherbs.app.ui
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
