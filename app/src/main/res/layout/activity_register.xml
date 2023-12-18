@@ -74,7 +74,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="70dp"
                     android:layout_marginStart="24dp"
-                    android:layout_marginTop="24dp"
+                    android:layout_marginTop="20dp"
                     android:layout_marginEnd="24dp"
                     android:background="@drawable/bg_input_editor"
                     android:hint="nama lengkap"
@@ -83,6 +83,7 @@
                     app:hintAnimationEnabled="true"
                     app:hintEnabled="true"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/img_logo_long2"
                     app:startIconTint="@color/main_300">
@@ -90,11 +91,11 @@
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/input_nama_lengkap"
                         android:layout_width="match_parent"
-                        android:layout_height="60dp"
-                        android:paddingTop="10dp"
+                        android:layout_height="match_parent"
                         android:fontFamily="@font/poppins_light"
                         android:inputType="textPersonName"
                         android:letterSpacing="0"
+                        android:paddingTop="10dp"
                         android:textColor="@color/main_300"
                         android:textSize="16sp" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -121,12 +122,43 @@
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/input_email"
                         android:layout_width="match_parent"
-                        android:layout_height="60dp"
+                        android:layout_height="match_parent"
                         android:fontFamily="@font/poppins_light"
                         android:letterSpacing="0"
                         android:textColor="@color/main_300"
                         android:textSize="16sp" />
                 </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_nomor_telepon"
+                    style="@style/TextInputLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="@drawable/bg_input_editor"
+                    android:hint="nomor telepon"
+                    android:padding="10dp"
+                    app:endIconMode="custom"
+                    app:hintAnimationEnabled="true"
+                    app:hintEnabled="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_email"
+                    app:startIconTint="@color/main_300">
+
+          <!-- <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_nomor_telepon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/poppins_light"
+                    android:inputType="phone"
+                    android:letterSpacing="0"
+                    android:textColor="@color/main_300"
+                    android:textSize="16sp" /> -->
+
+                </com.google.android.material.textfield.TextInputEditText>
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/txt_password"
@@ -145,13 +177,13 @@
                     app:hintEnabled="true"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/txt_email"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_nomor_telepon"
                     app:startIconTint="@color/main_300">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/input_password"
                         android:layout_width="match_parent"
-                        android:layout_height="60dp"
+                        android:layout_height="match_parent"
                         android:fontFamily="@font/poppins_light"
                         android:inputType="textPassword"
                         android:letterSpacing="0"
@@ -182,7 +214,7 @@
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/input_konfirmasi_password"
                         android:layout_width="match_parent"
-                        android:layout_height="60dp"
+                        android:layout_height="match_parent"
                         android:fontFamily="@font/poppins_light"
                         android:inputType="textPassword"
                         android:letterSpacing="0"
