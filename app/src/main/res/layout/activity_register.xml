@@ -129,7 +129,7 @@
                         android:textSize="16sp" />
                 </com.google.android.material.textfield.TextInputLayout>
 
-                <com.google.android.material.textfield.TextInputEditText
+                <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/txt_nomor_telepon"
                     style="@style/TextInputLayoutStyle"
                     android:layout_width="match_parent"
@@ -148,18 +148,16 @@
                     app:layout_constraintTop_toBottomOf="@+id/txt_email"
                     app:startIconTint="@color/main_300">
 
-                    <!-- <com.google.android.material.textfield.TextInputEditText
-                              android:id="@+id/input_nomor_telepon"
-                              android:layout_width="match_parent"
-                              android:layout_height="match_parent"
-                              android:fontFamily="@font/poppins_light"
-                              android:inputType="phone"
-                              android:letterSpacing="0"
-                              android:textColor="@color/main_300"
-                              android:textSize="16sp" /> -->
-
-                </com.google.android.material.textfield.TextInputEditText>
-
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/input_nomor_telepon"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/poppins_light"
+                        android:inputType="phone"
+                        android:letterSpacing="0"
+                        android:textColor="@color/main_300"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/txt_password"
                     style="@style/TextInputLayoutStyle"
