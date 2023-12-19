@@ -11,7 +11,7 @@
         tools:context=".ui.RegisterActivity">
 
         <TextView
-            android:id="@+id/txtRegisterPage"
+            android:id="@+id/txtVerifiyPage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -27,18 +27,18 @@
 
 
         <TextView
-            android:id="@+id/txtRegisterPage2"
+            android:id="@+id/txtVerifiyPage2"
             android:layout_width="344dp"
             android:layout_height="44dp"
             android:fontFamily="@font/poppins_medium"
             android:letterSpacing="0"
-            android:text="Start your green journey! Sign up now to unlock a world of plant information, care insights, and gardening tips"
+            android:text="Start your green journey! Verify now to unlock a world of plant information, care insights, and gardening tips"
             android:textColor="@color/neutral_200"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.238"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtRegisterPage" />
+            app:layout_constraintTop_toBottomOf="@+id/txtVerifiyPage" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardViewRegister"
@@ -48,7 +48,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtRegisterPage2"
+            app:layout_constraintTop_toBottomOf="@+id/txtVerifiyPage2"
             app:layout_constraintVertical_bias="1.0">
 
             <androidx.constraintlayout.widget.ConstraintLayout
