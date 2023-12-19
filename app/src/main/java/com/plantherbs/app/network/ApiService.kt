@@ -19,6 +19,7 @@ interface ApiService {
     fun register(
         @Field("fullName") fullName: String,
         @Field("email") email: String,
+        @Field("phoneNumber") phoneNumber: String,
         @Field("password") password: String
-    ): Call<ApiService>
+    ): Call<ApiResponse>
 }

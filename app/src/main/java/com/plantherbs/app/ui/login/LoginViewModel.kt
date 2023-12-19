@@ -2,13 +2,14 @@ package com.plantherbs.app.ui.login
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
 import com.plantherbs.app.network.ApiResponse
 import com.plantherbs.app.network.ApiService
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class LoginViewModel {
+class LoginViewModel : ViewModel() {
     private val _loginResult = MutableLiveData<Boolean>()
     val loginResult: LiveData<Boolean>
         get() = _loginResult
