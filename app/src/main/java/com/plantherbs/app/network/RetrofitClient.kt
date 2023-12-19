@@ -5,7 +5,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitClient {
-    private const val BASE_URL = "https://backend-msa6gk7a6q-uc.a.run.app"
+    private const val BASE_URL = "https://backend-msa6gk7a6q-uc.a.run.app/"
 
     private val okHttpClient = OkHttpClient.Builder()
         .build()
