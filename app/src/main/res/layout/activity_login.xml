@@ -53,15 +53,12 @@
                     app:hintEnabled="true"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/img_logo_long"
-                    app:startIconPadding="16dp"
-                    app:startIconTint="@color/main_300">
+                    app:layout_constraintTop_toBottomOf="@+id/img_logo_long">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/input_login_email"
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
-                        android:paddingLeft="10dp"
                         android:fontFamily="@font/poppins_light"
                         android:inputType="textLongMessage|textPersonName"
                         android:letterSpacing="0"
@@ -85,8 +82,7 @@
                     app:hintEnabled="true"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/txt_login_email"
-                    app:startIconTint="@color/main_300">
+                    app:layout_constraintTop_toBottomOf="@+id/txt_login_email">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/input_login_password"
