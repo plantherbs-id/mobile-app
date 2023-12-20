@@ -1,8 +1,8 @@
-package com.plantherbs.app
+package com.plantherbs.app.ui.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.plantherbs.App.R
+import com.plantherbs.app.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

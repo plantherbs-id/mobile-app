@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">plantherbs</string>
+    <string name="app_name">MyTestApp</string>
+    <string name="scan_title">Scan Your PlantHerbs</string>
+    <string name="food">Knowledge the plant</string>
+    <string name="delivery">Scan your plant</string>
+    <string name="loading_analyse_titile">Analyse Image...</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet consectetur. Dolor dolor egestas duis elementum consectetur. Malesuada enim metus velit sit rhoncus neque et massa eu. Risus pellentesque faucibus odio quam pretium a odio arcu auctor. Eget aliquam mi lacus massa et. Eu vitae elit vehicula at massa mollis augue mollis. Felis dui eget euismod quisque nulla sed amet. Facilisi sed leo etiam suspendisse suspendisse pharetra aliquam massa. Nibh tincidunt turpis lorem purus risus suspendisse leo. Dui consectetur fames mauris ipsum viverra massa sed dictum. Gravida eu nulla scelerisque lacus. Pellentesque commodo a at nisl ultrices nunc est imperdiet. Tincidunt congue placerat venenatis lectus aliquet lectus pellentesque ipsum. Urna velit aenean at tincidunt ullamcorper enim risus. Elit ligula integer felis orci elit amet consequat diam. Tortor blandit dignissim fringilla scelerisque felis lacus elementum vitae elementum. Magna aliquam nunc purus ut in. A metus massa nulla velit nunc ante justo. Purus nulla quis id sagittis. Purus vitae justo convallis fermentum purus senectus. Non vel vel orci phasellus venenatis nisl. Ut pellentesque id consequat enim felis at vel ridiculus. Nibh rhoncus pellentesque nisi pretium viverra enim. Et quis pharetra vitae mattis sagittis a hendrerit quis velit. Sagittis diam ut id mi urna hendrerit nec facilisis sed. Rutrum condimentum adipiscing scelerisque suspendisse. Placerat lorem at est eget feugiat sed phasellus volutpat. Quam ac diam penatibus pellentesque turpis. Leo blandit donec facilisis dictum posuere. Aliquet dui urna quis euismod id. Egestas bibendum hac sit volutpat. Eu tortor enim cursus aliquam lobortis dolor. Magna risus quam varius eget dolor. Ut enim nec vitae habitant sollicitudin etiam orci. Mi arcu porta cras vulputate nibh tellus morbi platea eu. Sem tristique potenti interdum arcu ut. Dignissim viverra massa semper at morbi et. Lorem sed rhoncus nunc magnis et varius sit quis suspendisse. Mi nunc sit ultrices turpis curabitur. Cursus sit ultrices donec pharetra ut porttitor quis pellentesque. Nibh scelerisque ut scelerisque congue at sed accumsan. Arcu magnis facilisis urna in nibh nullam integer. Nullam magna tristique massa risus iaculis facilisi. Tristique est interdum dignissim sit tincidunt malesuada. Facilisi non bibendum nulla id fames dolor odio iaculis.</string>
+    <string name="herbs_name">PlantHerbs Name</string>
+    <string name="welcome">Hello, %1$s \nIndentifier Your PlantHerbs Today</string>
+    <string name="title_bookmark">Boookmark</string>
+    <string name="payment">Let’s dive your plant</string>
+    <string name="search_hint">Find your favorite herbs</string>
+    <string name="first">Welcome to the green revolution! Dive into the world of plant knowledge with our app. Let\'s grow together.</string>
+    <string name="second">Unlock plant secrets with a scan! Join us and delve into the realm of botanical wonders by effortlessly identifying plants through our app.</string>
+    <string name="third">Instant plant insights await! Dive into a world of green wonders by logging in now for immediate access to comprehensive plant information..</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
