@@ -8,9 +8,10 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.plantherbs.app.R
+import com.plantherbs.app.network.ApiService
+import com.plantherbs.app.network.RetrofitClient
 import com.plantherbs.app.ui.login.LoginActivity
-import com.plantherbs.app.ui.network.retrofit.RetrofitClient
-import com.plantherbs.app.ui.network.service.ApiService
+
 
 class RegisterActivity : AppCompatActivity() {
 

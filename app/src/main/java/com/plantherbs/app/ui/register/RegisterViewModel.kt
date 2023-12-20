@@ -3,8 +3,8 @@ package com.plantherbs.app.ui.register
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.plantherbs.app.network.response.ApiResponse
-import com.plantherbs.app.ui.network.service.ApiService
+import com.plantherbs.app.network.ApiResponse
+import com.plantherbs.app.network.ApiService
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
