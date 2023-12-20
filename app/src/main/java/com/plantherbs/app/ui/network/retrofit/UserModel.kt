@@ -1,4 +1,4 @@
-package com.plantherbs.app.network
+package com.plantherbs.app.ui.network.retrofit
 
 data class UserModel(
     val userId: String,

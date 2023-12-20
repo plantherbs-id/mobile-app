@@ -1,44 +1,31 @@
 plugins {
     kotlin("android")
-    kotlin("android-extensions")
-    id("com.android.application")
+    id 'kotlin-android'
+    id 'com.android.application'
 }
 
 android {
-    namespace = "com.plantherbs.app"
-    compileSdk = 34
+    compileSdkVersion 34
 
     defaultConfig {
-        applicationId = "com.plantherbs.app"
-        minSdk = 24
-        targetSdk = 33
-        versionCode = 1
-        versionName = "1.0"
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        applicationId "com.plantherbs.app"
+        minSdkVersion 21
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
         release {
-            minifyEnabled = false
-            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
-    }
-
-    kotlinOptions {
-        jvmTarget = "1.8"
-    }
-
+    namespace 'com.plantherbs.app'
     buildFeatures {
-        mlModelBinding = true
-    }
-
-    viewBinding {
-        enabled = true
+        mlModelBinding true
     }
 }
 
