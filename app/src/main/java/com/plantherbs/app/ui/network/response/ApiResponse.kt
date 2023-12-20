@@ -1,9 +1,10 @@
 package com.plantherbs.app.network.response
 
-data class ApiResponse(val sukses: Boolean, val pesan: String){
-    fun isSuccess(): Boolean {
-        return sukses
-    }
+data class ApiResponse(
+    val isSuccess: Boolean,
+    val message: String
+) {
+    
 }
 
 
