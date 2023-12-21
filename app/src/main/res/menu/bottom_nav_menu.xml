@@ -2,13 +2,18 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_detection"
-        android:icon="@drawable/ic_camera"
-        android:title="@string/title_detection" />
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/home_selector"
+        android:title="@string/title_home" />
+    <item
+        android:id="@+id/bookmarkFragment"
+        android:icon="@drawable/bookmark_selector"
+        android:title="@string/title_bookmark"
+        />
 
     <item
-        android:id="@+id/navigation_account"
-        android:icon="@drawable/ic_person"
-        android:title="@string/title_account" />
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/profile_selector"
+        android:title="@string/title_profile" />
 
 </menu>

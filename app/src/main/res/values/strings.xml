@@ -20,6 +20,8 @@
     <string name="herbs_name">PlantHerbs Name</string>
     <string name="welcome">Hello, %1$s \nIndentifier Your PlantHerbs Today</string>
     <string name="title_bookmark">Boookmark</string>
+    <string name="title_home">Home</string>
+    <string name="title_profile">Profile</string>
     <string name="payment">Let’s dive your plant</string>
     <string name="search_hint">Find your favorite herbs</string>
 

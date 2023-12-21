@@ -79,6 +79,7 @@
                     android:background="@drawable/bg_input_editor"
                     android:hint="nama lengkap"
                     android:padding="10dp"
+
                     app:endIconMode="custom"
                     app:hintAnimationEnabled="true"
                     app:hintEnabled="true"
