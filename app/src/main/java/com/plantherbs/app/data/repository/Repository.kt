@@ -6,15 +6,15 @@ import com.plantherbs.app.data.remote.datastore.UserPreferences
 import com.plantherbs.app.network.ApiService
 
 class Repository private constructor(
-    private val ccApiService: ApiService,
+    private val ApiService: ApiService,
     private val userPreferences: UserPreferences,
 ) {
 
     suspend fun register(name: String, email: String, password: String) =
-        ccApiService.register(name, email, password)
+        ApiService.register(name, email, password)
 
     suspend fun login(email: String, password: String) =
-        ccApiService.login(email, password)
+        ApiService.login(email, password)
 
     fun getUser() = userPreferences.getUser().asLiveData()
 
