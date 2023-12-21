@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <!--  PRIMARY COLOR  -->
+    <color name="main_50">#EAEDEA</color>
+    <color name="main_75">#AAB6A7</color>
+    <color name="main_100">#899882</color>
+    <color name="main_200">#566B4D</color>
+    <color name="main_300">#2C4D28</color>
+    <color name="main_400">#22361C</color>
+    <color name="main_500">#1A2F18</color>
+    <!--  SYSTEM COLOR  -->
+    <color name="success">#3AA04B</color>
+    <color name="warning">#FDC706</color>
+    <color name="danger">#ED2A1C</color>
+    <color name="information">#3D5CFF</color>
+    <color name="light_success">#D7FFDD</color>
+    <color name="light_danger">#FBE4E3</color>
+    <color name="premium">#EC9922</color>
+    <color name="light_premium">#FFF5DE</color>
+    <color name="light_standard">#FBFBFB</color>
+    <!--  NEUTRAL COLOR  -->
+    <color name="neutral_50">#efefef</color>
+    <color name="neutral_100">#cecece</color>
+    <color name="neutral_200">#b6b6b6</color>
+    <color name="neutral_300">#959595</color>
+    <color name="neutral_400">#818181</color>
+    <color name="neutral_500">#616161</color>
+    <color name="neutral_600">#585858</color>
+    <color name="neutral_700">#454545</color>
+    <color name="neutral_800">#353535</color>
+    <color name="neutral_900">#292929</color>
+    <color name="neutral_black">#000000</color>
+    <color name="neutral_white">#FFFFFF</color>
+    <!--  ACCENT COLOR  -->
+    <color name="accent_white">#ffffff</color>
+    <color name="accent_white_hover">#f6f5f4</color>
+    <color name="accent_white_active">#e3e0dd</color>
+    <color name="accent_light">#f6f5f4</color>
+    <color name="accent_light_hover">#e3e0dd</color>
+    <color name="accent_light_active">#d3cec9</color>
+    <color name="accent_normal">#edebea</color>
+    <color name="accent_normal_hover">#d8d4d0</color>
+    <color name="accent_normal_active">#c2bcb6</color>
+    <color name="accent_dark">#e4e2df</color>
+
+    <color name="primary">#F9FAFB</color>
+    <color name="secondary">#F3F4F6</color>
+    <color name="base200">#E5E7EB</color>
+    <color name="base300">#D1D5DB</color>
+    <color name="base400">#9CA3AF</color>
+    <color name="base500">#6B7280</color>
+    <color name="base600">#4B5563</color>
+    <color name="base700">#374151</color>
+    <color name="base800">#1F2937</color>
+    <color name="base900">#111827</color>
+    <color name="base950">#030712</color>
+    <color name="primary50">#F7FEE7</color>
+    <color name="primary100">#ECFCCB</color>
+    <color name="primary200">#D9F99D</color>
+    <color name="primary300">#BEF264</color>
+    <color name="primary400">#A3E635</color>
+    <color name="primary500">#84CC16</color>
+    <color name="primary600">#65A30D</color>
+    <color name="primary700">#4D7C0F</color>
+    <color name="primary800">#3F6212</color>
+    <color name="primary900">#365314</color>
+    <color name="primary950">#1A2E05</color>
+
+    <color name="medium_1">#65A30D</color>
+    <color name="medium_2">#CA8A04</color>
+    <color name="bawah">#DC2626</color>
+
+    <color name="bg_premium">#CCF9DC</color>
+    <color name="bg_medium_1">#E2FAB5</color>
+    <color name="bg_medium_2">#FEF4A7</color>
+    <color name="bg_bawah">#FECACA</color>
+</resources>
