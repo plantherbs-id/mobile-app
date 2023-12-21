@@ -1,4 +1,4 @@
-package com.plantherbs.app.datastore
+package com.plantherbs.app.data.remote.datastore
 
 data class UserModel(
     val userId: String,

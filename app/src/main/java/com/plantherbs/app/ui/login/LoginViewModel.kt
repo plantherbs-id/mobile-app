@@ -6,9 +6,9 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.google.gson.Gson
-import com.plantherbs.app.Repository
-import com.plantherbs.app.datastore.UserModel
-import com.plantherbs.app.datastore.response.LoginResponse
+import com.plantherbs.app.data.repository.Repository
+import com.plantherbs.app.data.remote.datastore.UserModel
+import com.plantherbs.app.data.remote.datastore.response.LoginResponse
 import kotlinx.coroutines.launch
 import retrofit2.HttpException
 

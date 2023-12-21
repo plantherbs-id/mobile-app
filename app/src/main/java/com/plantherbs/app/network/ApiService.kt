@@ -1,7 +1,7 @@
 package com.plantherbs.app.network
 
-import com.plantherbs.app.datastore.response.LoginResponse
-import com.plantherbs.app.datastore.response.RegisterResponse
+import com.plantherbs.app.data.remote.datastore.response.LoginResponse
+import com.plantherbs.app.data.remote.datastore.response.RegisterResponse
 import retrofit2.http.Field
 import retrofit2.http.FormUrlEncoded
 import retrofit2.http.POST

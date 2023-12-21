@@ -4,6 +4,7 @@ import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.plantherbs.app.network.Injection
+import com.plantherbs.app.data.repository.Repository
 import com.plantherbs.app.ui.login.LoginViewModel
 import com.plantherbs.app.ui.main.MainViewModel
 import com.plantherbs.app.ui.register.RegisterViewModel

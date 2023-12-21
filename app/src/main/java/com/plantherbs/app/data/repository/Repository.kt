@@ -1,8 +1,8 @@
-package com.plantherbs.app
+package com.plantherbs.app.data.repository
 
 import androidx.lifecycle.asLiveData
-import com.plantherbs.app.datastore.UserModel
-import com.plantherbs.app.datastore.UserPreferences
+import com.plantherbs.app.data.remote.datastore.UserModel
+import com.plantherbs.app.data.remote.datastore.UserPreferences
 import com.plantherbs.app.network.ApiService
 
 class Repository private constructor(

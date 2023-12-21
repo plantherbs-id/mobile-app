@@ -1,4 +1,4 @@
-package com.plantherbs.app.datastore
+package com.plantherbs.app.data.remote.datastore
 
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences

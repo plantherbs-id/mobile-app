@@ -1,4 +1,4 @@
-package com.plantherbs.app.datastore.response
+package com.plantherbs.app.data.remote.datastore.response
 
 
 import com.google.gson.annotations.SerializedName
