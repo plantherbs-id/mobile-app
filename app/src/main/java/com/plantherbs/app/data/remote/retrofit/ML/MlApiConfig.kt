@@ -12,7 +12,4 @@ object MlApiConfig {
     suspend fun detectionImage(
         @Part file: MultipartBody.Part
     ): DetectionResponse
-
-    {
-    }
 }
