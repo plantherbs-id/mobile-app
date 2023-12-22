@@ -2,15 +2,22 @@ package com.plantherbs.app.network
 
 import com.plantherbs.app.data.remote.datastore.response.LoginResponse
 import com.plantherbs.app.data.remote.datastore.response.RegisterResponse
+import com.plantherbs.app.model.AddBookmarkResponse
 import com.plantherbs.app.model.BookmarkResponse
 import com.plantherbs.app.model.DefaultResponse
+import com.plantherbs.app.model.DetailResponse
 import com.plantherbs.app.model.HerbResponse
 import com.plantherbs.app.model.UserResponse
+import okhttp3.MultipartBody
+import okhttp3.RequestBody
 import retrofit2.http.DELETE
 import retrofit2.http.Field
 import retrofit2.http.FormUrlEncoded
 import retrofit2.http.GET
+import retrofit2.http.Multipart
 import retrofit2.http.POST
+import retrofit2.http.PUT
+import retrofit2.http.Part
 import retrofit2.http.Path
 
 interface ApiService {
@@ -37,7 +44,7 @@ interface ApiService {
 
     @GET("foods/get/{HerbsId}")
     suspend fun getFoodById(
-        @Path("foodsId") foodsId: Int
+        @Path("HerbId") foodsId: Int
     ): DetailResponse
 
     @GET("bookmarks/{userId}")
@@ -55,7 +62,7 @@ interface ApiService {
     @POST("bookmarks/{userId}")
     suspend fun addBookmark(
         @Path("userId") username: String,
-        @Field("foodsId") foodId: String,
+        @Field("HerbId") foodId: String,
     ) : AddBookmarkResponse
 
     @DELETE("bookmarks/{userId}/{bookmarkId}")
@@ -76,8 +83,8 @@ interface ApiService {
         @Path("keyword") keyword: String,
     ): HerbResponse
 
-    @GET("foods/searchFood/{foodName}")
-    suspend fun scanFood(
+    @GET("foods/searchHerb/{foodName}")
+    suspend fun scanHerb(
         @Path("foodName") foodName: String
     ): HerbResponse
 
