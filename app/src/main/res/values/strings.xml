@@ -3,6 +3,8 @@
     <string name="app_name">plantherbs</string>
 
     <string name="logo_icon">Logo Icon</string>
+    <string name="username">Username</string>
+    <string name="email">user@gmail.com</string>
 
     <string name="welcoming">Selamat datang di PlantHerbs</string>
     <string name="text_identification">Identifikasi Tanaman herbal Anda dengan efektif dan efisien</string>
