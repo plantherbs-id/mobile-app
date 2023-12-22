@@ -3,11 +3,7 @@ import org.gradle.internal.impldep.bsh.commands.dir
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-<<<<<<< Updated upstream
-    id ("kotlin-parcelize")
-=======
     id("kotlin-parcelize")
->>>>>>> Stashed changes
 }
 
 android {
