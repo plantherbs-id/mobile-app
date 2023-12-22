@@ -10,7 +10,7 @@ interface PhApiService {
     @GET("Home/GetGridData1")
     fun getRicePrice(
         @Query("tanggal") tanggal: String,
-        @Query("commodity") commodity: String,
+        @Query("plantherbs") plantherbs: String,
         @Query("priceType") priceType: Int,
         @Query("provId") provId: Int
     ): Call<CheckPriceResponse>
