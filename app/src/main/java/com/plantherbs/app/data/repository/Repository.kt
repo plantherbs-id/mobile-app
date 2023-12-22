@@ -6,15 +6,12 @@ import androidx.lifecycle.liveData
 import com.google.gson.Gson
 import com.plantherbs.app.data.remote.datastore.UserModel
 import com.plantherbs.app.data.remote.datastore.UserPreferences
-<<<<<<< Updated upstream
 import com.plantherbs.app.data.remote.datastore.response.AddBookmarkResponse
 import com.plantherbs.app.data.remote.datastore.response.DetailResponse
 import com.plantherbs.app.data.remote.datastore.response.HerbsResponse
 import com.plantherbs.app.model.DefaultResponse
 import com.plantherbs.app.model.HerbResponse
-=======
 import com.plantherbs.app.data.remote.datastore.response.UserResponse
->>>>>>> Stashed changes
 import com.plantherbs.app.model.LoginResult
 import com.plantherbs.app.model.UserResponse
 import com.plantherbs.app.network.ApiService
@@ -77,126 +74,126 @@ class Repository private constructor(
         emit(Result.Loading)
         try {
             val response = apiService.getAllHerbs()
-=======
-    fun getUserById(userId: String): LiveData<Result<UserResponse>> = liveData {
-        emit(Result.Loading)
-        try {
-            val response = apiService.getUserById(userId)
-            emit(Result.Success(response))
-        } catch (e: HttpException) {
-            val errorBody = e.response()?.errorBody()?.string()
-            val errorResponse = Gson().fromJson(errorBody, DefaultResponse::class.java)
-            emit(Result.Error(errorResponse.message.toString()))
-        }
-    }
-
-    fun getAllHerbs(): LiveData<Result<FoodResponse>> = liveData {
-        emit(Result.Loading)
-        try {
-            val response = apiService.getAllFoods()
->>>>>>> Stashed changes
-            emit(Result.Success(response))
-        } catch (e: HttpException) {
-            val errorBody = e.response()?.errorBody()?.string()
-            val errorResponse = Gson().fromJson(errorBody, DefaultResponse::class.java)
-            emit(Result.Error(errorResponse.message.toString()))
-        }
-    }
-
-    fun getHerbsById(id: Int): LiveData<Result<DetailResponse>> = liveData {
-        emit(Result.Loading)
-        try {
-<<<<<<< Updated upstream
-            val response = apiService.getHerbsById(id)
-=======
-            val response = apiService.getFoodById(id)
->>>>>>> Stashed changes
-            emit(Result.Success(response))
-        } catch (e: HttpException) {
-            val errorBody = e.response()?.errorBody()?.string()
-            val errorResponse = Gson().fromJson(errorBody, DefaultResponse::class.java)
-            emit(Result.Error(errorResponse.message.toString()))
-        }
-    }
-
-    fun getSpesificBookmark(userId: String, foodId: String): LiveData<Result<DetailResponse>> =
-        liveData {
-            emit(Result.Loading)
-            try {
-                val response = apiService.getSpesificBookmark(userId, foodId)
-                emit(Result.Success(response))
-            } catch (e: HttpException) {
-                val errorBody = e.response()?.errorBody()?.string()
-                val errorResponse = Gson().fromJson(errorBody, DefaultResponse::class.java)
-                emit(Result.Error(errorResponse.message.toString()))
+            ====== =
+            fun getUserById(userId: String): LiveData<Result<UserResponse>> = liveData {
+                emit(Result.Loading)
+                try {
+                    val response = apiService.getUserById(userId)
+                    emit(Result.Success(response))
+                } catch (e: HttpException) {
+                    val errorBody = e.response()?.errorBody()?.string()
+                    val errorResponse = Gson().fromJson(errorBody, DefaultResponse::class.java)
+                    emit(Result.Error(errorResponse.message.toString()))
+                }
             }
-        }
 
-    fun addBookmark(userId: String, foodId: String): LiveData<Result<AddBookmarkResponse>> =
-        liveData {
-            emit(Result.Loading)
-            try {
-                val response = apiService.addBookmark(userId, foodId)
-                emit(Result.Success(response))
-            } catch (e: HttpException) {
-                val errorBody = e.response()?.errorBody()?.string()
-                val errorResponse = Gson().fromJson(errorBody, DefaultResponse::class.java)
-                emit(Result.Error(errorResponse.message.toString()))
+            fun getAllHerbs(): LiveData<Result<HerbResponse>> = liveData {
+                emit(Result.Loading)
+                try {
+                    val response = apiService.getAllFoods()
+                    >>>>>>> Stashed changes
+                    emit(Result.Success(response))
+                } catch (e: HttpException) {
+                    val errorBody = e.response()?.errorBody()?.string()
+                    val errorResponse = Gson().fromJson(errorBody, DefaultResponse::class.java)
+                    emit(Result.Error(errorResponse.message.toString()))
+                }
             }
-        }
 
-    fun deleteBookmark(userId: String, bookmarkId: String): LiveData<Result<DefaultResponse>> =
-        liveData {
-            emit(Result.Loading)
-            try {
-                val response = apiService.deleteBookmark(userId, bookmarkId)
-                emit(Result.Success(response))
-            } catch (e: HttpException) {
-                val errorBody = e.response()?.errorBody()?.string()
-                val errorResponse = Gson().fromJson(errorBody, DefaultResponse::class.java)
-                emit(Result.Error(errorResponse.message.toString()))
+            fun getHerbsById(id: Int): LiveData<Result<DetailResponse>> = liveData {
+                emit(Result.Loading)
+                try {
+                    val response = apiService.getHerbsById(id)
+                    val response = apiService.getFoodById(id)
+                    emit(Result.Success(response))
+                } catch (e: HttpException) {
+                    val errorBody = e.response()?.errorBody()?.string()
+                    val errorResponse = Gson().fromJson(errorBody, DefaultResponse::class.java)
+                    emit(Result.Error(errorResponse.message.toString()))
+                }
             }
-        }
 
-    fun getHerbsByKeywoord(keyword: String): LiveData<Result<HerbsResponse>> = liveData {
-        emit(Result.Loading)
-        try {
-<<<<<<< Updated upstream
-            val response = apiService.getHerbsByKeyword(keyword)
-=======
-            val response = apiService.getFoodByKeyword(keyword)
->>>>>>> Stashed changes
-            emit(Result.Success(response))
-        } catch (e: HttpException) {
-            val errorBody = e.response()?.errorBody()?.string()
-            val errorResponse = Gson().fromJson(errorBody, DefaultResponse::class.java)
-            emit(Result.Error(errorResponse.message.toString()))
-        }
-    }
+            fun getSpesificBookmark(
+                userId: String,
+                foodId: String
+            ): LiveData<Result<DetailResponse>> =
+                liveData {
+                    emit(Result.Loading)
+                    try {
+                        val response = apiService.getSpesificBookmark(userId, foodId)
+                        emit(Result.Success(response))
+                    } catch (e: HttpException) {
+                        val errorBody = e.response()?.errorBody()?.string()
+                        val errorResponse = Gson().fromJson(errorBody, DefaultResponse::class.java)
+                        emit(Result.Error(errorResponse.message.toString()))
+                    }
+                }
 
-<<<<<<< Updated upstream
-    fun scanHerbs(herbsName: String): LiveData<Result<HerbsResponse>> = liveData {
-        emit(Result.Loading)
-        try {
-            val response = apiService.scanHerbs(herbsName)
-=======
-    fun scanHerbs(foodName: String): LiveData<Result<HerbsResponse>> = liveData {
-        emit(Result.Loading)
-        try {
-            val response = apiService.scanFood(foodName)
->>>>>>> Stashed changes
-            emit(Result.Success(response))
-        } catch (e: HttpException) {
-            val errorBody = e.response()?.errorBody()?.string()
-            val errorResponse = Gson().fromJson(errorBody, DefaultResponse::class.java)
-            emit(Result.Error(errorResponse.message.toString()))
-        }
-    }
+            fun addBookmark(userId: String, foodId: String): LiveData<Result<AddBookmarkResponse>> =
+                liveData {
+                    emit(Result.Loading)
+                    try {
+                        val response = apiService.addBookmark(userId, foodId)
+                        emit(Result.Success(response))
+                    } catch (e: HttpException) {
+                        val errorBody = e.response()?.errorBody()?.string()
+                        val errorResponse = Gson().fromJson(errorBody, DefaultResponse::class.java)
+                        emit(Result.Error(errorResponse.message.toString()))
+                    }
+                }
 
-<<<<<<< Updated upstream
+            fun deleteBookmark(
+                userId: String,
+                bookmarkId: String
+            ): LiveData<Result<DefaultResponse>> =
+                liveData {
+                    emit(Result.Loading)
+                    try {
+                        val response = apiService.deleteBookmark(userId, bookmarkId)
+                        emit(Result.Success(response))
+                    } catch (e: HttpException) {
+                        val errorBody = e.response()?.errorBody()?.string()
+                        val errorResponse = Gson().fromJson(errorBody, DefaultResponse::class.java)
+                        emit(Result.Error(errorResponse.message.toString()))
+                    }
+                }
 
+            fun getHerbsByKeywoord(keyword: String): LiveData<Result<HerbsResponse>> = liveData {
+                emit(Result.Loading)
+                try {
+                    <<<<<<< Updated upstream
+                    val response = apiService.getHerbsByKeyword(keyword)
+                    ====== =
+                    val response = apiService.getFoodByKeyword(keyword)
+                    >>>>>>> Stashed changes
+                    emit(Result.Success(response))
+                } catch (e: HttpException) {
+                    val errorBody = e.response()?.errorBody()?.string()
+                    val errorResponse = Gson().fromJson(errorBody, DefaultResponse::class.java)
+                    emit(Result.Error(errorResponse.message.toString()))
+                }
+            }
+
+            <<<<<<< Updated upstream
+            fun scanHerbs(herbsName: String): LiveData<Result<HerbsResponse>> = liveData {
+                emit(Result.Loading)
+                try {
+                    val response = apiService.scanHerbs(herbsName)
+                    ====== =
+                    fun scanHerbs(foodName: String): LiveData<Result<HerbsResponse>> = liveData {
+                        emit(Result.Loading)
+                        try {
+                            val response = apiService.scanFood(foodName)
+                            >>>>>>> Stashed changes
+                            emit(Result.Success(response))
+                        } catch (e: HttpException) {
+                            val errorBody = e.response()?.errorBody()?.string()
+                            val errorResponse =
+                                Gson().fromJson(errorBody, DefaultResponse::class.java)
+                            emit(Result.Error(errorResponse.message.toString()))
+                        }
+                    }
+                }
+            }
+        }}
 }
-=======
-}
-
->>>>>>> Stashed changes

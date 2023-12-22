@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.GridLayoutManager
 import com.plantherbs.app.R
+import com.plantherbs.app.data.Result
 import com.plantherbs.app.ViewModelFactory
 import com.plantherbs.app.databinding.FragmentHomeBinding
 
