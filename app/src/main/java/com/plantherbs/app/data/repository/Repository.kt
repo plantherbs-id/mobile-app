@@ -6,12 +6,19 @@ import androidx.lifecycle.liveData
 import com.google.gson.Gson
 import com.plantherbs.app.data.remote.datastore.UserModel
 import com.plantherbs.app.data.remote.datastore.UserPreferences
+import com.plantherbs.app.data.remote.datastore.response.AddBookmarkResponse
+import com.plantherbs.app.data.remote.datastore.response.DetailResponse
+import com.plantherbs.app.data.remote.datastore.response.HerbsResponse
 import com.plantherbs.app.model.DefaultResponse
 import com.plantherbs.app.model.HerbResponse
 import com.plantherbs.app.model.LoginResult
 import com.plantherbs.app.model.UserResponse
 import com.plantherbs.app.network.ApiService
 import kotlinx.coroutines.flow.Flow
+import okhttp3.MediaType.Companion.toMediaType
+import okhttp3.MultipartBody
+import okhttp3.RequestBody.Companion.asRequestBody
+import okhttp3.RequestBody.Companion.toRequestBody
 import retrofit2.HttpException
 import retrofit2.Response
 import kotlin.Result
@@ -60,4 +67,93 @@ class Repository private constructor(
                 instance ?: Repository(ApiService, userPreferences)
             }.also { instance = it }
     }
+
+    fun getAllHerbs(): LiveData<Result<HerbsResponse>> = liveData {
+        emit(Result.Loading)
+        try {
+            val response = apiService.getAllHerbs()
+            emit(Result.Success(response))
+        } catch (e: HttpException) {
+            val errorBody = e.response()?.errorBody()?.string()
+            val errorResponse = Gson().fromJson(errorBody, DefaultResponse::class.java)
+            emit(Result.Error(errorResponse.message.toString()))
+        }
+    }
+
+    fun getHerbsById(id: Int): LiveData<Result<DetailResponse>> = liveData {
+        emit(Result.Loading)
+        try {
+            val response = apiService.getHerbsById(id)
+            emit(Result.Success(response))
+        } catch (e: HttpException) {
+            val errorBody = e.response()?.errorBody()?.string()
+            val errorResponse = Gson().fromJson(errorBody, DefaultResponse::class.java)
+            emit(Result.Error(errorResponse.message.toString()))
+        }
+    }
+
+    fun getSpesificBookmark(userId: String, foodId: String): LiveData<Result<DetailResponse>> =
+        liveData {
+            emit(Result.Loading)
+            try {
+                val response = apiService.getSpesificBookmark(userId, foodId)
+                emit(Result.Success(response))
+            } catch (e: HttpException) {
+                val errorBody = e.response()?.errorBody()?.string()
+                val errorResponse = Gson().fromJson(errorBody, DefaultResponse::class.java)
+                emit(Result.Error(errorResponse.message.toString()))
+            }
+        }
+
+    fun addBookmark(userId: String, foodId: String): LiveData<Result<AddBookmarkResponse>> =
+        liveData {
+            emit(Result.Loading)
+            try {
+                val response = apiService.addBookmark(userId, foodId)
+                emit(Result.Success(response))
+            } catch (e: HttpException) {
+                val errorBody = e.response()?.errorBody()?.string()
+                val errorResponse = Gson().fromJson(errorBody, DefaultResponse::class.java)
+                emit(Result.Error(errorResponse.message.toString()))
+            }
+        }
+
+    fun deleteBookmark(userId: String, bookmarkId: String): LiveData<Result<DefaultResponse>> =
+        liveData {
+            emit(Result.Loading)
+            try {
+                val response = apiService.deleteBookmark(userId, bookmarkId)
+                emit(Result.Success(response))
+            } catch (e: HttpException) {
+                val errorBody = e.response()?.errorBody()?.string()
+                val errorResponse = Gson().fromJson(errorBody, DefaultResponse::class.java)
+                emit(Result.Error(errorResponse.message.toString()))
+            }
+        }
+
+    fun getHerbsByKeywoord(keyword: String): LiveData<Result<HerbsResponse>> = liveData {
+        emit(Result.Loading)
+        try {
+            val response = apiService.getHerbsByKeyword(keyword)
+            emit(Result.Success(response))
+        } catch (e: HttpException) {
+            val errorBody = e.response()?.errorBody()?.string()
+            val errorResponse = Gson().fromJson(errorBody, DefaultResponse::class.java)
+            emit(Result.Error(errorResponse.message.toString()))
+        }
+    }
+
+    fun scanHerbs(herbsName: String): LiveData<Result<HerbsResponse>> = liveData {
+        emit(Result.Loading)
+        try {
+            val response = apiService.scanHerbs(herbsName)
+            emit(Result.Success(response))
+        } catch (e: HttpException) {
+            val errorBody = e.response()?.errorBody()?.string()
+            val errorResponse = Gson().fromJson(errorBody, DefaultResponse::class.java)
+            emit(Result.Error(errorResponse.message.toString()))
+        }
+    }
+
+
 }
