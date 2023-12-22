@@ -1,10 +1,13 @@
 package com.plantherbs.app.data.remote.datastore
 
+import android.preference.Preference
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.stringPreferencesKey
+import com.plantherbs.app.data.UserPreference
+import com.plantherbs.app.model.LoginResult
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 
@@ -39,6 +42,17 @@ class UserPreferences private constructor(private val dataStore: DataStore<Prefe
             preferences[EMAIL_KEY] = ""
             preferences[TOKEN_KEY] = ""
             preferences[IS_LOGIN_KEY] = false
+        }
+    }
+
+    fun getSession(): Flow<LoginResult> {
+        return dataStore.data.map { preferences ->
+            LoginResult(
+                preferences[NAME_KEY] ?: "",
+                preferences[USER_ID_KEY] ?: "",
+                preferences[TOKEN_KEY] ?: "",
+                preferences[IS_LOGIN_KEY] ?: false
+            )
         }
     }
 

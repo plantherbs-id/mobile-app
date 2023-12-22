@@ -4,7 +4,9 @@ import android.location.Location
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.asLiveData
 import com.plantherbs.app.data.repository.Repository
+import com.plantherbs.app.model.LoginResult
 
 class HomeViewModel(private val repository: Repository) : ViewModel() {
 
