@@ -13,6 +13,7 @@ import retrofit2.http.Part
 import java.util.concurrent.TimeUnit
 
 object MlApiConfig {
+<<<<<<< HEAD
 
     fun getApiServiceMl(): MlApiService {
 
@@ -37,4 +38,11 @@ object MlApiConfig {
 
         return retrofit.create(MlApiService::class.java)
     }
+=======
+    @Multipart
+    @POST("detectImage")
+    suspend fun detectionImage(
+        @Part file: MultipartBody.Part
+    ): DetectionResponse
+>>>>>>> 4b7b171821d5d463f2a8daea0fa81c5ff14ef19a
 }
