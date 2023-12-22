@@ -1,5 +1,6 @@
 package com.plantherbs.app.data.remote.retrofit.cc
 
+import de.hdodenhof.circleimageview.BuildConfig
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -20,7 +21,7 @@ object CcApiConfig {
             .build()
 
         val retrofit = Retrofit.Builder()
-            .baseUrl("https://berasil-xcbcfsxr5a-et.a.run.app/api/v1/")
+            .baseUrl("https://backend-msa6gk7a6q-uc.a.run.app")
             .addConverterFactory(GsonConverterFactory.create())
             .client(client)
             .build()

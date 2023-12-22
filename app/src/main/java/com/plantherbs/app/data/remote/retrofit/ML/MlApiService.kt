@@ -1,14 +1,14 @@
-package com.plantherbs.app.data.remote.retrofit.ph
+package com.plantherbs.app.data.remote.retrofit.ML
 
 import de.hdodenhof.circleimageview.BuildConfig
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import java.util.concurrent.TimeUnit
 
-object PhApiConfig {
-
-    fun getApiServiceBi(): PhApiService {
+interface MlApiService {
+    fun getApiServiceMl(): MlApiService {
 
         val loggingInterceptor = if (BuildConfig.DEBUG) {
             HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
@@ -18,6 +18,9 @@ object PhApiConfig {
 
         val client = OkHttpClient.Builder()
             .addInterceptor(loggingInterceptor)
+            .connectTimeout(5, TimeUnit.MINUTES)
+            .writeTimeout(5, TimeUnit.MINUTES)
+            .readTimeout(5, TimeUnit.MINUTES)
             .build()
 
         val retrofit = Retrofit.Builder()
@@ -26,6 +29,6 @@ object PhApiConfig {
             .client(client)
             .build()
 
-        return retrofit.create(PhApiService::class.java)
+        return retrofit.create(MlApiService::class.java)
     }
 }
