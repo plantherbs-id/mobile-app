@@ -44,7 +44,6 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_detection">Deteksi</string>
     <string name="title_account">Akun</string>
-    <string name="welcome">Hello, %1$s \nIndentifier Your Food Today</string>
 
     <string name="image_preview">Image Preview</string>
     <string name="upload_image">Unggah Gambar</string>

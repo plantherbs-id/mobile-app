@@ -3,7 +3,10 @@ package com.plantherbs.app.data.remote.datastore.response
 import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
 import kotlinx.parcelize.Parcelize
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 @Parcelize
 data class HerbsResponse(
 

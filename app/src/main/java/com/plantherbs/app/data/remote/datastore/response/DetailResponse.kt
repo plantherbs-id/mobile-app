@@ -1,5 +1,6 @@
 package com.plantherbs.app.data.remote.datastore.response
 
+<<<<<<< Updated upstream
 import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
 import kotlinx.parcelize.Parcelize
@@ -47,3 +48,5 @@ data class DetailData(
     @field:SerializedName("updatedAt")
     val updatedAt: String? = null
 ) : Parcelable
+=======
+>>>>>>> Stashed changes

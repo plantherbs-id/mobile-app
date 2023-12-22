@@ -3,7 +3,11 @@ import org.gradle.internal.impldep.bsh.commands.dir
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+<<<<<<< Updated upstream
     id ("kotlin-parcelize")
+=======
+    id("kotlin-parcelize")
+>>>>>>> Stashed changes
 }
 
 android {
@@ -53,9 +57,9 @@ dependencies {
     implementation ("androidx.navigation:navigation-ui-ktx:2.7.6")
     implementation ("androidx.viewpager2:viewpager2:1.0.0")
 
-    implementation ("org.tensorflow:tensorflow-lite-support:0.1.0")
-    implementation ("org.tensorflow:tensorflow-lite-metadata:0.1.0")
-    implementation ("org.tensorflow:tensorflow-lite-gpu:2.3.0")
+    implementation ("org.tensorflow:tensorflow-lite-support:0.4.4")
+    implementation ("org.tensorflow:tensorflow-lite-metadata:0.4.4")
+    implementation ("org.tensorflow:tensorflow-lite-gpu:2.13.0")
 
     implementation ("androidx.camera:camera-view:1.3.1")
     testImplementation ("junit:junit:4.13.2")

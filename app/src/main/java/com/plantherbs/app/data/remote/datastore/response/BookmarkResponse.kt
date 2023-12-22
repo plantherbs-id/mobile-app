@@ -1,5 +1,9 @@
 package com.plantherbs.app.data.remote.datastore.response
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
 import kotlinx.parcelize.Parcelize
@@ -24,11 +28,19 @@ data class BookmarkItem(
     val bookmarkId: Int? = null,
 
     @field:SerializedName("foods")
+<<<<<<< Updated upstream
     val foods: BookmarkFoods? = null
 ) : Parcelable
 
 @Parcelize
 data class BookmarkFoods(
+=======
+    val foods: BookmarkHerbs? = null
+) : Parcelable
+
+@Parcelize
+data class BookmarkHerbs(
+>>>>>>> Stashed changes
 
     @field:SerializedName("image")
     val image: String? = null,
