@@ -1,4 +1,4 @@
-// HomeFragment.kt
+
 package com.plantherbs.app.ui.home
 
 import android.os.Bundle

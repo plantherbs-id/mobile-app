@@ -2,4 +2,5 @@
 <resources>
 
     <style name="ThemeOverlay_MaterialComponents_MaterialAlertDialog_Background"></style>
+    <style name="CustomCardViewDetail"></style>
 </resources>

@@ -26,6 +26,10 @@
     <string name="payment">Let’s dive your plant</string>
     <string name="search_hint">Find your favorite herbs</string>
 
+    <string name="plantherbs_name">PlantHerbs Name</string>
+    <string name="gambar_herbs">Gambar PlantHerbs</string>
+    <string name="btn_bookmark_now">Bookmark Now</string>
+
     <string name="first">Welcome to the green revolution! Dive into the world of plant knowledge with our app. Let\'s grow together.</string>
     <string name="second">Unlock plant secrets with a scan! Join us and delve into the realm of botanical wonders by effortlessly identifying plants through our app.</string>
     <string name="third">Instant plant insights await! Dive into a world of green wonders by logging in now for immediate access to comprehensive plant information..</string>
