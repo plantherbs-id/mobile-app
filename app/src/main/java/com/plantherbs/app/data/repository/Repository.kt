@@ -6,10 +6,14 @@ import androidx.lifecycle.liveData
 import com.google.gson.Gson
 import com.plantherbs.app.data.remote.datastore.UserModel
 import com.plantherbs.app.data.remote.datastore.UserPreferences
+import com.plantherbs.app.model.DefaultResponse
+import com.plantherbs.app.model.HerbResponse
 import com.plantherbs.app.model.LoginResult
+import com.plantherbs.app.model.UserResponse
 import com.plantherbs.app.network.ApiService
 import kotlinx.coroutines.flow.Flow
 import retrofit2.HttpException
+import retrofit2.Response
 import kotlin.Result
 
 class Repository private constructor(
@@ -33,14 +37,14 @@ class Repository private constructor(
     suspend fun logout() = userPreferences.logout()
 
     fun getUserById(userId: String): LiveData<Result<UserResponse>> = liveData {
-        emit(Result.Loading)
+        emit(Result.Success(Response))
         try {
             val response = ApiService.getUserById(userId)
-            emit(Result.Success(response))
+            emit(Result.success(response))
         } catch (e: HttpException) {
             val errorBody = e.response()?.errorBody()?.string()
             val errorResponse = Gson().fromJson(errorBody, DefaultResponse::class.java)
-            emit(Result.Error(errorResponse.message.toString()))
+            emit(com.plantherbs.app.data.Result.Error(errorResponse.message.toString()))
         }
     }
 

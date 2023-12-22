@@ -16,22 +16,16 @@ class HomeViewModel(private val repository: Repository) : ViewModel() {
     val keyword: LiveData<String>
         get() = _keyword
     val location = MutableLiveData<Location>()
-
     fun getSession(): LiveData<LoginResult> {
         return repository.getSession().asLiveData()
     }
-
     fun getUserById(userId: String) = repository.getUserById(userId)
-
     fun getAllHerbs() = repository.getAllHerbs()
-
     fun getHerbById(id: Int) = repository.getHerbById(id)
-
     fun setKeyword(keyword: String) {
         _keyword.value = keyword
         getHerbByKeyword(_keyword.value.toString())
     }
-
     fun getHerbByKeyword(keyword: String) = repository.getHerbByKeyword(keyword)
 
     fun getSpecificBookmark(userId: String, herbId: String) = repository.getSpecificBookmark(userId, herbId)
